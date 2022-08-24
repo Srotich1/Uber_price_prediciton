@@ -120,12 +120,12 @@ body {
 }
 
 ::selection {
-  background: 	#2e1825;
+  background: 	#b5c2c7;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #360E78;
+  background: #b5c2c7;
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #273c4b;
+  color: #b5c2c7;
 }
 
 .section-heading img {
@@ -360,7 +360,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #273c4b;
+  background-color: #b5c2c7;
   display: block;
   position: absolute;
   width: 30px;
@@ -460,7 +460,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #232c3a;
+  color: #b5c2c7;
 }
 
 @media (max-width: 1200px) {
@@ -966,7 +966,7 @@ trainers
 #trainers .trainer-item h4 {
   font-size: 19px;
   font-weight: 600;
-  color: 	#232c3a;
+  color: 	#5e2534;
   letter-spacing: 0.5px;
   margin-bottom: 18px;
 }
