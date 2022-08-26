@@ -182,7 +182,7 @@ body {
   display: inline-block;
   font-size: 15px;
   padding: 12px 20px;
-  background-color: #273c4b;
+  background-color: #f7882f;
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -213,7 +213,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: 	#273c4b!important;
+  color: 	#dcc7aa!important;
 }
 
 .background-header .main-nav .nav li:last-child a {
@@ -225,11 +225,11 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #2e1825!important;
+  color: #dcc7aa!important;
 }
 
 .background-header .nav li a.active {
-  color: 	#5e2534!important;
+  color: 	#dcc7aa!important;
 }
 
 .header-area {
@@ -266,7 +266,7 @@ header
 
 .header-area .main-nav .logo em {
   font-style: normal;
-  color: #5e2534;
+  color: #0f2862;
   font-weight: 900;
 }
 
@@ -312,8 +312,8 @@ header
   display: inline-block;
   font-size: 13px;
   padding: 11px 17px;
-  background-color: 	#b5c2c7;
-  color: #fff;
+  background-color: 	#f7882f;
+  color: #0f2862;
   text-align: center;
   font-weight: 400;
   letter-spacing: 0px;
@@ -324,7 +324,7 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
-  background-color: 	#5e2534;
+  background-color: 	#0f2862;
   opacity: 1;
 }
 
@@ -391,7 +391,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #5e2534;
+  background-color: #0f2862;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -654,7 +654,7 @@ banner
 
 .main-banner .caption h2 em {
   font-style: normal;
-  color: 	#5e2534;
+  color: 	#f7c331;
   font-weight: 900;
 }
 
