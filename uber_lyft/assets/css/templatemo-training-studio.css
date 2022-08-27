@@ -712,11 +712,11 @@ subscribe
 /* methodology background setup */
 #call-to-action {
   padding: 325px 0px;
-  background-image: url(../images/methodologies-1-2x.png);
+  /* background-image: url(../images/methodologies-1-2x.png); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: left;
+  text-align: center;
 }
 
 .cta-content h2 {
