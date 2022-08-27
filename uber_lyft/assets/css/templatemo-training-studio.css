@@ -842,7 +842,7 @@ schedule
 
 #schedule {
   padding: 0px 0px 140px 0px;
-  background-image: url(../images/schedule-bg.jpg);
+  /* background-image: url(../images/schedule-bg.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -968,7 +968,7 @@ trainers
 #trainers .trainer-item h4 {
   font-size: 19px;
   font-weight: 600;
-  color: 	#5e2534;
+  color: 	#6b7a8f;
   letter-spacing: 0.5px;
   margin-bottom: 18px;
 }
@@ -992,7 +992,7 @@ trainers
 }
 
 #trainers .trainer-item ul.social-icons li a:hover {
-  color: 	#232c3a;
+  color: 	#f7c331;
 }
 
 
@@ -1074,7 +1074,7 @@ contact
 }
 
 .contact-form button:hover {
-  background-color: 	#b5c2c7;
+  background-color: 	#f7882f;
 }
 
 
