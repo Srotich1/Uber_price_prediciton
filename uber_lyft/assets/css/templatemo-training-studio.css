@@ -575,7 +575,7 @@ header
     height: auto !important;
   }
   .header-area .main-nav .nav li.submenu:after {
-    color: 	#5e2534;
+    color: 	#6b7a8f;
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -617,7 +617,7 @@ banner
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(35,45,57,0.8);
+    background-color: rgba(56, 68, 82, 0.8);
     top: 0;
     left: 0;
     bottom: 7px;
@@ -638,7 +638,7 @@ banner
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
-  color: #fff;
+  color: #fc5226;
   letter-spacing: 0.5px;
 }
 
