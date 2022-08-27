@@ -95,103 +95,92 @@
       </audio>
 </div>
     <!-- ***** Features Item Start ***** -->
-    <section class="section" id="features">
-      
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2>Predict <em>Your Ride</em></h2>
-     
-                        <!-- <img src="assets/images/line-dec.png" alt="waves"> -->
-                        <p>Predicting the price of your ride can be as simple as selecting from a dropdown menu. So take the guessing out and let us help yo choose which ride share is most affordable.</p>
-                                 
-                        
-                        <!-- dropdown -->
-        
-<select name=“pregnancies” id=“pregnancies”>
-    <option value=“0”> Origin</option>
-    <option value=“1">Back Bay</option>
-    <option value=“2”>Beacon Hill</option>
-    <option value=“3">Boston University</option>
-    <option value=“4”>Fenway</option>
-    <option value=“5">Financial District</option>
-    <option value=“6”>Haymarket</option>
-    <option value=“7">North End</option>
-    <option value=“8”>North Station</option>
-    <option value=“9">Northeastern University</option>
-    <option value=“10”>South Station</option>
-    <option value=“10”>Theatre District</option>
-    <option value=“10”>West End</option>
-    
- </select>
-  <select name=“pregnancies” id=“pregnancies”>
-    <option value=“0”> Destination</option>
-    <option value=“1">Back Bay</option>
-    <option value=“2”>Beacon Hill</option>
-    <option value=“3">Boston University</option>
-    <option value=“4”>Fenway</option>
-    <option value=“5">Financial District</option>
-    <option value=“6”>Haymarket</option>
-    <option value=“7">North End</option>
-    <option value=“8”>North Station</option>
-    <option value=“9">Northeastern University</option>
-    <option value=“10”>South Station</option>
-    <option value=“10”>Theatre District</option>
-    <option value=“10”>West End</option>
-  </select>
+<section class="section" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <br><br><br><br><br>
+          <h2>Predict <em>Your Ride</em></h2>
+          <img src="assets/images/line-dec.png" alt="">
+          <br>
+          <p class="bigger_fontsize">Predicting the price of your ride can be as simple as selecting from a dropdown menu. So take the guessing out and let us help yo choose which ride share is most affordable.</p>
+          <br><br>
+          <select name="origin" id=“origin”>
+            <option value="" disabled selected>Select your Origin</option>
+            <option value="Back_Bay">Back Bay</option>
+            <option value="Beacon_Hill">Beacon Hill</option>
+            <option value="Boston_University">Boston University</option>
+            <option value="Fenway">Fenway</option>
+            <option value="Financial_District">Financial District</option>
+            <option value="Haymarket">Haymarket</option>
+            <option value="North_End">North End</option>
+            <option value="North_Station">North Station</option>
+            <option value="Northeaster_University">Northeastern University</option>
+            <option value="South_Station">South Station</option>
+            <option value="Theatre_District">Theatre District</option>
+            <option value="West_End">West End</option>  
+          </select>
 
-  <select name=“pregnancies” id=“pregnancies”>
-    <option value=“0”> Forcast</option>
-    <option value=“1">Clear</option>
-    <option value=“2”>Drizzle</option>
-    <option value=“3">Foggy</option>
-    <option value=“4”>Light Rain</option>
-    <option value=“5">Mostly Cloudy</option>
-    <option value=“6”>Overcast</option>
-    <option value=“7">Partly Cloudy</option>
-    <option value=“8”>Possible Drizzle</option>
-    <option value=“9">Rain</option>
-      </select>
-
-  <select name=“pregnancies” id=“pregnancies”>
-    <option value=“0”> Vehicle Type</option>
-    <option value=“1">L-Shared / U-Pool</option>
-    <option value=“2”>L-XL / U-XL</option>
-    <option value=“3">L-Blk XL / U- Blk SUV</option>
-    <option value=“4”>L-Lux </option>
-    <option value=“5">U - X</option>
-    
-  </select>
-  <div>
-    <div></div>
-    <div></div> 
+          <select name=“destination” id=“destination”>
+            <option value="" disabled selected>Select your Destination</option>
+            <option value="Back_Bay">Back Bay</option>
+            <option value="Beacon_Hill">Beacon Hill</option>
+            <option value="Boston_University">Boston University</option>
+            <option value="Fenway">Fenway</option>
+            <option value="Financial_District">Financial District</option>
+            <option value="Haymarket">Haymarket</option>
+            <option value="North_End">North End</option>
+            <option value="North_Station">North Station</option>
+            <option value="Northeaster_University">Northeastern University</option>
+            <option value="South_Station">South Station</option>
+            <option value="Theatre_District">Theatre District</option>
+            <option value="West_End">West End</option>
+          </select>
+          <br><br>
+          <select name="weather" id="weather">
+            <option value="" disabled selected>Select your Forecast</option>
+            <option value="Clear">Clear</option>
+            <option value="Drizzle">Drizzle</option>
+            <option value="Foggy">Foggy</option>
+            <option value="Light_Rain">Light Rain</option>
+            <option value="Mostly_Cloudy">Mostly Cloudy</option>
+            <option value="Overcast">Overcast</option>
+            <option value="Partly_Cloudy">Partly Cloudy</option>
+            <option value="Possible_Drizzle">Possible Drizzle</option>
+            <option value="Rain">Rain</option>
+          </select>
+          <select name="vehicleType" id="vehicleType">
+            <option value="" disabled selected>Select the car type</option>
+            <option value="UberPool/Shared">L-Shared / U-Pool</option>
+            <option value="UberXL/LyftXL">L-XL / U-XL</option>
+            <option value="Black/Lux_Black">L-Blk / U-Blk</option>
+            <option value="Black_SUV/Lux_Black_XL">L-Blk XL / U-Blk SUV</option>
+            <option value="UberX/Lyft">L-X / U-X </option>
+            <option value="WAV/Lux">L-Lux / U-WAV</option> 
+          </select>
+          <br><br>
+  
+          <select name="weekDay" id="weekDay">
+            <option value="" disabled selected>Select the day of the week</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+            <!-- dropdown end -->  
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary btn-lg btn-block">See Price </button>
+        </div>
+      </div>
+    </div>
   </div>
-  <select name=“pregnancies” id=“pregnancies”>
-    <option value=“0”>Weekday</option>
-    <option value=“1">Sunday</option>
-    <option value=“2”>Monday</option>
-    <option value=“3">Tuesday</option>
-    <option value=“4”>Wednesday</option>
-    <option value=“5">Thursday</option>
-    <option value=“6”>Friday</option>
-    <option value=“7">Saturday</option>
-    </select>
-
-        <!-- dropdown end -->  
-        </div>
-    <div>
-        <button type="button" class="btn btn-primary btn-lg btn-block">See Price </button>
-    </div>     
-                   
-                
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+</section>
+<br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- ***** Our graph analysis Start ***** -->
     <section class="section" id="our-classes">
@@ -279,20 +268,13 @@
     <section class="section" id="call-to-action">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="cta-content">
-                        <div>
-                        </div>        
-                        <h2>Methodologies!</h2>
-                        <!-- <img src="assets/images/line-dec.png" alt=""> -->
-                        <!-- <img class="img-responsive center-block" src="../uber_lyft/assets/images/methodologies-1-2x.png" alt=""> -->
-                        <p>Requirements --> Analysis --> Design --> Coding --> Testing --> Operations <br>  </p>
-                        <!-- <div class="main-button scroll-to-section"> -->
-                            <!-- <a href="#our-classes">predict before A ride</a> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>Methodologies</h2>
+                    <img src="assets/images/line-dec.png" alt="">
+                    <p>Requirements --> Analysis --> Design --> Coding --> Testing --> Operations</p>
+                </div>
+              </div>
         </div>
    
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -303,7 +285,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../uber_lyft/assets/images/Screen Shot 2022-08-27 at 11.05.41 AM.png" alt="Lasso Model Data " 
+            <img class="d-block w-100" src="../uber_lyft/assets/images/Screen Shot 2022-08-27 at 11.05.41 AM.png" alt="Lasso Model Data " >
             <p>The Lasso Model is a regression analysis method that performs both variable selection and regularization in order to enhance the prediction accuracy and interpretability of the resulting statistical model.</p>
           </div>
           <div class="carousel-item">
@@ -318,8 +300,7 @@
             <img class="d-block w-100" src="../uber_lyft/assets/images/3.png" alt="Notebook Data Cleaning 1">
             <p>Juypter Notebook was used pull in desired data from kaggle and intilize the API. </p>
           </div>
-        </div>
-        <div class="carousel-item">
+          <div class="carousel-item">
             <img class="d-block w-100" src="../uber_lyft/assets/images/4.png" alt="Notebook Data Cleaning 2">
             <p> Ultimately we needed to use longitude and latitude fields for our models we cleaned the data to insure a effortless call when initializing our models. </p>
           </div>
