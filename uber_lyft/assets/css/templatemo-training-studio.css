@@ -161,6 +161,17 @@ body {
   margin-bottom: 20px!important;
 }
 
+.prediction {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+  color: #b5c2c7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
 .section-heading h2 {
   font-size: 45px;
   font-weight: 800;

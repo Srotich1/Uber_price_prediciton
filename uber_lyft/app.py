@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func, or_
 from sqlalchemy.ext.automap import automap_base
 
+
 import pickle
 
 from flask import (
@@ -13,18 +14,25 @@ from flask import (
     jsonify,
     request,
     redirect)
-
+from flask_cors import CORS
 
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
-
+CORS(app)
 # ---------------------------------------------------------
 # Web site
 
-@app.route("/prediction" , methods=["POST"])
-def model():
+@app.route("/api/prediction/<origin>/<destination>/<weather>/<vehicleType>/<weekDay>" , methods=["GET"])
+def model(origin, destination, weather, vehicleType, weekDay):
+    print(origin)
+    print(destination)
+    print(weather)
+    print(vehicleType)
+    print(weekDay)
+    
+    #return jsonify(results)
 
     distance = 1.11#float(request.form["distance"])
     Monday = 1 #float(request.form["bedrooms"])
@@ -100,14 +108,14 @@ def model():
     else:
         type_car = 'Lyft'
         price = prediction_l
-            
-    #prediction = "${0:,.2f}".format(prediction)
+
     results = {
         "type": type_car,
         "price":  "${0:,.2f}".format(price)
     }
     print(results)
     return jsonify(results)
+
 
 if __name__ == "__main__":
     app.run()

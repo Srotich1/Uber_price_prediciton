@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+        <!-- D3 library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
     </head>
     
@@ -51,7 +53,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#features">Prediction</a></li>
+                            <li class="scroll-to-section"><a href="#prediction">Prediction</a></li>
                             <li class="scroll-to-section"><a href="#our-classes">Graphs</a></li>
                             <li class="scroll-to-section"><a href="#call-to-action">Methodologies</a></li>
                             <li class="main-button"><a href="#trainers">About Us</a></li> 
@@ -80,7 +82,7 @@
                 <h6>Clean Ride, Cheaper Ride</h6>
                 <h2>Cheaper with  <em>Uber or Lyft</em></h2>
                 <div class="main-button scroll-to-section">
-                    <a href="#features">Predict</a>
+                    <a href="#prediction">Predict</a>
                 </div>
             </div>
         <div>
@@ -93,8 +95,8 @@
       Your browser does not support the audio element.
       </audio>
 </div>
-    <!-- ***** Features Item Start ***** -->
-<section class="section" id="features">
+    <!-- ***** Prediction Item Start ***** -->
+<section class="section" id="prediction">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 offset-lg-3">
@@ -105,7 +107,7 @@
           <br>
           <p class="bigger_fontsize">Predicting the price of your ride can be as simple as selecting from a dropdown menu. So take the guessing out and let us help yo choose which ride share is most affordable.</p>
           <br><br>
-          <select name="origin" id=“origin”>
+          <select name="origin" id="origin">
             <option value="" disabled selected>Select your Origin</option>
             <option value="Back_Bay">Back Bay</option>
             <option value="Beacon_Hill">Beacon Hill</option>
@@ -121,7 +123,7 @@
             <option value="West_End">West End</option>  
           </select>
 
-          <select name=“destination” id=“destination”>
+          <select name="destination" id="destination">
             <option value="" disabled selected>Select your Destination</option>
             <option value="Back_Bay">Back Bay</option>
             <option value="Beacon_Hill">Beacon Hill</option>
@@ -151,12 +153,12 @@
           </select>
           <select name="vehicleType" id="vehicleType">
             <option value="" disabled selected>Select the car type</option>
-            <option value="UberPool/Shared">L-Shared / U-Pool</option>
-            <option value="UberXL/LyftXL">L-XL / U-XL</option>
-            <option value="Black/Lux_Black">L-Blk / U-Blk</option>
-            <option value="Black_SUV/Lux_Black_XL">L-Blk XL / U-Blk SUV</option>
-            <option value="UberX/Lyft">L-X / U-X </option>
-            <option value="WAV/Lux">L-Lux / U-WAV</option> 
+            <option value="UberPool-Shared">L-Shared / U-Pool</option>
+            <option value="UberXL-LyftXL">L-XL / U-XL</option>
+            <option value="Black-Lux_Black">L-Blk / U-Blk</option>
+            <option value="Black_SUV-Lux_Black_XL">L-Blk XL / U-Blk SUV</option>
+            <option value="UberX-Lyft">L-X / U-X </option>
+            <option value="WAV-Lux">L-Lux / U-WAV</option> 
           </select>
           <br><br>
   
@@ -173,9 +175,15 @@
             <!-- dropdown end -->  
         </div>
         <div>
-          <button type="button" class="btn btn-primary btn-lg btn-block">See Price </button>
+          <button type="button" class="btn btn-primary btn-lg btn-block" onclick="pricePrediction()">See Price </button>
         </div>
       </div>
+      <div class="col-lg-6 offset-lg-3 prediction" id='results'>
+          <h1 id='bestResults'></h1>
+          <h1 id='bestCarType'></h1>
+          <h1 id='bestPrice'></h1>
+      </div>
+      </div>  
     </div>
   </div>
 </section>
@@ -510,7 +518,8 @@
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
-
+    <!-- Our JavaScript file -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
